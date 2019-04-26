@@ -1,0 +1,33 @@
+1. Install IntelliJ IDEA
+    - https://www.jetbrains.com/idea/download/#section=linux
+
+2. In IntelliJ IDEA create a new maven project
+    - IDEA asked you to fill some fields - how are they later used in the project?
+
+3. What is JUnit?
+    - add junit maven dependency to your project
+    - create a test class with simple test method with body: `Assert.assertEquals(1, 2);`
+        - the test class should have name which ends with "Test", why?
+        - how do you run the test from IDEA?
+        - how do you run the test from command line?
+        - fix the test so it passes
+        - how would you change the code so you do not have to use `Assert.` before assertEquals?
+
+4. Get familiar with IDEA
+    - how do you change java version for current project?
+    - how do you change java version for all future projects?
+    - learn basic shortcuts
+        - one line comment
+        - block comment
+        - auto-format
+        - optimize imports
+        - go back to previous cursor position
+
+5. Add newest version of assertj dependency to your project
+    - https://mvnrepository.com/artifact/org.assertj/assertj-core
+    - what are main advantages of assertj in comparison with junit Assert?
+    - find out how to create simple assertions and change your test to use assertj
+        - https://joel-costigliola.github.io/assertj/assertj-core-features-highlight.html
+    - create more tests
+        - play with other assertj testing functions
+        - feel free to create an object class and try some basic tests with it
