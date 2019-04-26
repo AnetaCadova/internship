@@ -1,0 +1,30 @@
+Programming is all about practice, knowledge and experience. There are many places
+where you can train your skills
+    - https://code-exercises.com/programming/easy/
+    - https://www.codingame.com/home
+
+You write some code, submit it and the page runs some tests to evaluate your solution.
+
+1. Create new maven project, lets call it "Challenges"
+2. Add dependencies for junit and assertj
+3. Select some easy challenges (at least 3) from the first mentioned page and for every challenge do the following:
+    - pass the challenge on the page first
+    - transfer the solution to your project
+        - create a separate class for every challenge
+    - create a test class for the challenge and implement tests
+        - think about different test cases
+        - think about edge cases
+        - the tests should only pass if the solution is correct
+            - you can play with the solution once the tests are ready to see if it fails with incorrect solution
+    - every challenge and its tests should be commited to the task05 git branch in one single commit
+
+4. Debugging your code
+    - what is debugging?
+    - what is a breakpoint?
+    - how do you run the code in debug mode in your IntelliJ IDEA?
+    - what is the difference between "step over" and "step into" when debugging?
+    - try to debug the challenges you created
+
+5. Run all the tests you created from command line via mvn command
+    - how do you run only a specific test class?
+    - how do you run just a specific test method inside that class?
