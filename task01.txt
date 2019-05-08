@@ -2,13 +2,36 @@ Install fedora on either computer or external HDD
 
 What are following terms used for?
 
-shell
-sudo
-bashrc
-alias
-linux environment variable
-    - how to set permanent/temporary variable
-    - what is PATH variable
+shell - User interface for access to an operating system's services. 
+      - Gathers input from you and executes programs based on that input.
+      - When a program finishes executing, it displays that program's output.  
 
-opensource
-upstream in software development
+sudo - sudo command allows a user with proper permissions to execute a command
+       as another user, such as the superuser.
+
+bashrc - The .bashrc file is a script that is executed whenever a new terminal 
+         session is started in interactive mode. 
+
+alias -  This command creates an alias. 
+      -  Aliases allow a string to be substituted for a word when it is
+         used as the first word of a simple command.
+
+linux environment variable - Environmental variables are variables that are defined 
+                             for the current shell and are inherited by any child shells or processes. 
+
+    - how to set permanent/temporary variable 
+           - To set variable only for current shell: VARNAME="my value"
+           - To set it for current shell and all processes started from current shell: export VARNAME="my value"  
+           - To set it permanently - add them to one of your startup files
+                                   - like .~/bashrc, ~.profile or ~/.login.
+
+    - what is PATH variable - PATH is an environmental variable in Linux and other Unix-like operating systems
+                              that tells the shell which directories to search for executable files 
+                              (i.e., ready-to-run programs) in response to commands issued by a user. 
+
+opensource - something people can modify and share because its design is publicly accessible.
+           - Open source software is software with source code that anyone can inspect, modify, and enhance.
+
+upstream in software development - a direction toward the original authors or maintainers of software that is distributed as source code
+                                   and is a qualification of either a bug or a patch. 
+                                 - For example, a patch sent upstream is offered to the original authors or maintainers of the software. 
