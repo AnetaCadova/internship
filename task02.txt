@@ -9,6 +9,7 @@
     - `git commit --amend`
     - `git reset --hard upstream/myBranch`
     - `git reset --soft origin/myBranch`
+    - `git cherry-pick <commit>`
 
 2. Basic fedora customization - get familiar with following topics and install the tools which you like
     - desktop environment
