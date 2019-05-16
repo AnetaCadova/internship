@@ -1,14 +1,32 @@
 1. Git and common commands - what is the purpose of following commands?
-    - `git remote -v`
-    - `git remote add upstream <repo-url>`
-    - `git fetch`
-    - `git pull`
-    - `git rebase upstream/master master`
-    - `git rebase -i HEAD~3`
-    - `git push -f`
-    - `git commit --amend`
-    - `git reset --hard upstream/myBranch`
-    - `git reset --soft origin/myBranch`
+
+    - `git remote -v`- Shows the URL that Git has stored for the short name of a repository.
+
+    - `git remote add upstream <repo-url> - Specifies a new remote upstream repository that will be synced with the fork.
+                                          - Upstream" is a name for the main repository, from where you pull and keep a clone
+                                            of your fork updated.
+
+    - `git fetch`- Updates your remote references. 
+                 - Download objects and refs from another repository.
+
+    - `git pull` - Fetch from and integrate with another repository or a local branch. 
+
+    - `git rebase upstream/master master` - Rewrites your master branch so that any commits of yours that aren't already 
+                                            in upstream/master are replayed on top of that other branch.
+                                          - The goal of the rebase is to have a cleaner history if you have local changes or 
+                                            commits on the repository.
+
+    - `git rebase -i HEAD~3` - Merge multiple commits into one. (in this case last 3 commits).
+
+    - `git push -f`- Usually, the command refuses to update a remote ref that is not an ancestor of the local ref used to overwrite it.
+                   - This flag disables these checks, and can cause the remote repository to lose commits.
+
+    - `git commit --amend` - changing the most recetnt commit 
+
+    - `git reset --hard upstream/myBranch - resets your local branch to whatever is on upstream (discard local changes).
+
+    - `git reset --soft origin/myBranch - when the --soft argument is passed, the ref pointers are updated and the reset stops there. 
+                                        - The Staging Index and the Working Directory are left untouched. 
 
 2. Basic fedora customization - get familiar with following topics and install the tools which you like
     - desktop environment
