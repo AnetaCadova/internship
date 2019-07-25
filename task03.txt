@@ -1,26 +1,83 @@
 1. Maven
-    - what is it used for?
-    - where should you put maven installation?
+    - what is it used for? 
+      Maven’s primary goal is to allow a developer to comprehend the complete state of a development effort in the shortest period of time. In order to attain this goal, 
+      there are several areas of concern that Maven attempts to deal with:
+       - Making the build process easy
+       - Providing a uniform build system
+       - Providing quality project information
+       - Providing guidelines for best practices development
+       - Allowing transparent migration to new features
+
+    - where should you put maven installation? - to a folder, which is on PATH (by adding a bin folder with mvn command).
+
+Detailed steps are:
+    - Ensure JAVA_HOME environment variable is set and points to your JDK installation
+    - Extract distribution archive in any directory
+
+
     - download versions 3.3.9 and the newest maven version for java8, set up your linux to use the newer version
-    - what is maven repository
+    - what is maven repository -  A Maven repository is a directory to store all the project jars, library jar, plugins or any other artifacts. There are three types of Maven repository.
+    local
+    central
+    remote
+
     - where can you find maven settings.xml
-    - what is folder ~/.m2 used for
-    - what is maven profile
+        - The Maven install: ${maven.home}/conf/settings.xml
+        - A user’s install: ${user.home}/.m2/settings.xml
+        - The former settings.xml are also called global settings, the latter settings.xml are referred to as user settings.
+          If both files exists, their contents gets merged, with the user-specific settings.xml being dominant.
+
+    - what is folder ~/.m2 used for - The maven local repository is a local folder that is used to store all your project's dependencies.
+
+
+    - what is maven profile -  is an alternative set of configurations which set or override default values. 
+                            - Profiles allow to customize a build for different environments. 
+                            - Profiles are configured in the pom.xml and each profile is identified with an identifier.
 
 2. Java
-    - what is it used for?
-    - what are JDK, SDK, JRE, java binary code
-    - where should you put your java installation?
-    - what is environment variable JAVA_HOME
-    - openjdk vs oracle java
-    - install openjdk java from fedora repository
+    - what is it used for? -  Java is a widely used programming language expressly designed for use in the distributed environment of the internet.
+                           -  It is the most popular programming language for Android smartphone applications and is also among the most favored
+                              for the development of edge devices and the internet of things.
+
+    - what are JDK, SDK, JRE, java binary code - The Java Development Kit (JDK) is a software development environment used for developing Java applications and applets.
+                                               - It includes the Java Runtime Environment (JRE), an interpreter/loader (java), a compiler (javac), an archiver (jar), 
+                                                 a documentation generator (javadoc) and other tools needed in Java development.
+                                               - SDK is the acronym for “Software Development Kit”. The SDK brings together a group of tools that enable the programming of mobile applications.
+                                               - Java bytecode is a binary data format that includes loading information and execution instructions for the Java virtual machine. 
+                                                 Java bytecode is a special kind of binary code.                       
+
+    - where should you put your java installation? - to a folder, which is on PATH
+    - what is environment variable JAVA_HOME - 
+         - JAVA_HOME is a system environment variable which represent JDK installation directory.
+         - When you install JDK in your machine it creates a home directory and puts all its binary (bin), library(lib) and other tools.
+         - In order to compile java program "javac" tool should be in your PATH and in order to get that in PATH we use JAVA_HOME environment variable.
+
+    - openjdk vs oracle java - Oracle JDK releases will happen for every three years whereas OpenJDK release happens for every three months. 
+                             - Oracle JDK will concentrate more on the stability because it gives importance to more of its enterprise audience
+                                whereas Oracle JDK makes frequent releases to support additional performances and this may result in instability.
+                             - Oracle JSK supports the changes in release for long-term whereas Open JDK supports only until the next release is planned and done.
+                             - The build process for the Oracle JDK is based on the OpenJDK, hence there is no technical difference between OpenJDK vs Oracle JDK.
+
+    - install openjdk java from fedora repository - 
     - manually download newest oracle-1.8
         - how do you switch between those 2?
 
 3. Types of tests
-    - smoke
-    - unit
-    - integration
-    - performance
-    - long-running
-    - other?
+    - smoke -  Smoke testing covers most of the major functions of the software but none of them in depth. 
+            - The result of this test is used to decide whether to proceed with further testing.
+
+    - unit - UNIT TESTING is a level of software testing where individual units/ components of a software are tested.
+           - The purpose is to validate that each unit of the software performs as designed.
+           - A unit is the smallest testable part of any software. It usually has one or a few inputs and usually a single output. 
+
+    - integration - INTEGRATION TESTING is a level of software testing where individual units are combined and tested as a group.
+                  - The purpose of this level of testing is to expose faults in the interaction between integrated units. 
+                  - Test drivers and test stubs are used to assist in Integration Testing.
+
+    - performance - Performance testing is the process of determining the speed, responsiveness and stability of a computer, network, software program or device under a workload.           
+                  - Performance testing can involve quantitative tests done in a lab, or occur in the production environment in limited scenarios. 
+                  - Typical parameters include processing speed, data transfer rate, network bandwidth and throughput, workload efficiency and reliability.
+
+    - long-running - Long-running test suites take more than N minutes to run on an ordinary development machine, where N is in a range from 5 to 20-30,
+                     depending on your tolerance. Such long build times are not uncommon but they may holding you back from fast delivery and feedback. 
+- other?
